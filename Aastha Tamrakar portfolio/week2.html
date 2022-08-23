@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+<body>
+    <body style="background-color: #d6cbd3;"> 
+    <h1 style="color:black;font-family: 'Times New Roman', serif;">What is Web Server?</h1>
+    <hr><ul>
+        <li>On the hardware side, a web server is a computer that stores web server software and a website's component files (for example, HTML documents, images, CSS stylesheets, and JavaScript files). A web server connects to the Internet and supports physical data interchange with other devices connected to the web.</li>
+        <li>On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an HTTP server. An HTTP server is software that understands URLs (web addresses) and HTTP (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.</li>
+    </ul>
+    <p>At the most basic level, whenever a browser needs a file that is hosted on a web server, the browser requests the file via HTTP. When the request reaches the correct (hardware) web server, the (software) HTTP server accepts the request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't find the requested document, it returns a 404 response instead.)</p>
+    <img src="images/web-servers.png">
+    <p>To publish a website, you need either a static or a dynamic web server.<br><br>
+
+        A static web server, or stack, consists of a computer (hardware) with an HTTP server (software). We call it "static" because the server sends its hosted files as-is to your browser.<br>
+        
+        A dynamic web server consists of a static web server plus extra software, most commonly an application server and a database. We call it "dynamic" because the application server updates the hosted files before sending content to your browser via the HTTP server.<br>
+        
+        For example, to produce the final webpages you see in the browser, the application server might fill an HTML template with content from a database. Sites like MDN or Wikipedia have thousands of webpages. Typically, these kinds of sites are composed of only a few HTML templates and a giant database, rather than thousands of static HTML documents. This setup makes it easier to maintain and deliver the content.<br></p>
+        <hr>
+        <h2 style="color:black;font-family: 'Times New Roman', serif;">Deeper dive</h2>
+        <hr>
+        <p>To review: to fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own storage space. Upon finding the file, the server reads it, processes it as-needed, and sends it to the browser. Let's look at those steps in more detail.</p>
+        <hr>
+        <h3 style="color:black;font-family: 'Times New Roman', serif;">Hosting Files</h3>
+        <hr>
+        <p>First, a web server has to store the website's files, namely all HTML documents and their related assets, including images, CSS stylesheets, JavaScript files, fonts, and video.<br>
+            Technically, you could host all those files on your own computer, but it's far more convenient to store files all on a dedicated web server because:<br>
+        <ul>
+            <li>A dedicated web server is typically more available. (up and running)</li>
+            <li>Excluding downtime and systems troubles, a dedicated web server is always connected to the Internet.</li>
+            <li>A dedicated web server can have the same IP address all the time. This is known as a dedicated IP address. (not all ISPs provide a fixed IP address for home lines)</li>
+            <li>A dedicated web server is typically maintained by a third-party.</li>
+        </ul><br>
+        For all these reasons, finding a good hosting provider is a key part of building your website. Examine the various services companies offer. Choose one that fits your needs and budget. (Services range from free to thousands of dollars per month.)
+     </p>
+     <hr>
+     <h2 style="color:black;font-family: 'Times New Roman', serif;">Static vs Dynamic Content</h2>
+     <hr>
+     <p>Roughly speaking, a server can serve either static or dynamic content. Remember that the term static means "served as-is". Static websites are the easiest to set up, so we suggest you make your first site a static site.<br>
+        The term dynamic means that the server processes the content or even generates it on the fly from a database. This approach provides more flexibility, but the technical stack is more complex, making it dramatically more challenging to build a website.<br>
+        There are so many application server technologies that it's difficult to suggest a particular one. Some application servers cater to specific website categories like blogs, wikis, or eCommerce; others are more generic. If you're building a dynamic website, take the time to choose technology that fits your needs. Unless you want to learn web server programming (which is an exciting area in itself!), you don't need to create your own application server.<br></p>
+
+
+    
+    
+</body>
+</html>
